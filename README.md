@@ -1,14 +1,13 @@
 # Clipboard Guardian
 
-Clipboard Guardian — локальный “DLP‑агент” для контроля буфера обмена на **Windows** и **Android**.
+Clipboard Guardian — локальный агент для контроля буфера обмена на **Windows** и **Android**.
 Он показывает пользователю окно “Разрешить/Запретить” при операциях с буфером и ведёт локальные логи (NDJSON).
 
-на Android полноценная защита “во всех приложениях” возможна только через **LSPosed/Xposed** (из‑за ограничений Android 10+).
 
-## Быстрый старт (готовые сборки)
+## Быстрый старт (готовые сборки в Releases)
 
-- **Android APK**: `dist/android/ClipboardGuardian-debug.apk`
-- **Windows portable EXE**: `dist/windows/ClipboardGuardianPortable/ClipboardGuardian.Win.exe`
+- **Android APK**: `ClipboardGuardian-debug.apk`
+- **Windows portable EXE**: `ClipboardGuardian.Win.exe`
 
 
 
@@ -24,7 +23,7 @@ Clipboard Guardian — локальный “DLP‑агент” для конт
 
 ### Android: режим 2 — LSPosed/Xposed (глобальный контроль)
 
-1) Должны быть установлены **Magisk + LSPosed**.  
+1) Должны быть установлены **Root Magisk + LSPosed модуль**.  
 2) Установи `dist/android/ClipboardGuardian-debug.apk`.  
 3) Открой **LSPosed Manager → Modules** → включи модуль **Clipboard Guardian**.  
 4) Зайди в **Scope** модуля и отметь приложения (Chrome/Telegram/и т.д.).  
@@ -34,7 +33,7 @@ Clipboard Guardian — локальный “DLP‑агент” для конт
 
 ### Windows: как пользоваться
 
-1) Запусти `dist/windows/ClipboardGuardianPortable/ClipboardGuardian.Win.exe`.  
+1) Запусти `ClipboardGuardian.Win.exe`.  
 2) Откроется главное окно + иконка в трее.  
 3) При операциях с буфером обмена будет появляться окно разрешения с предпросмотром текста/файлов.  
 4) Доступ к буферу обмена будет блокироваться/разрешаться по кнопкам.
@@ -70,8 +69,6 @@ android/ClipboardGuardian.Android/          – Android проект (Gradle, Ko
 windows/ClipboardGuardian.Win/              – Windows агент (C# WinForms)
   Program.cs                                – всё приложение в одном файле:
                                               ApplicationContext + UI + clipboard/paste hooks + логирование
-
-dist/                                      – готовые сборки (APK/EXE)
 ```
 
 ## Как собрать из исходников
