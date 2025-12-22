@@ -1,0 +1,15 @@
+# Android
+android/ClipboardGuardian.Android/.gradle/
+android/ClipboardGuardian.Android/app/build/
+android/ClipboardGuardian.Android/local.properties
+
+# Windows/.NET
+windows/ClipboardGuardian.Win/bin/
+windows/ClipboardGuardian.Win/obj/
+
+# Build outputs
+dist/
+
+# OS/editor
+.DS_Store
+Thumbs.db
