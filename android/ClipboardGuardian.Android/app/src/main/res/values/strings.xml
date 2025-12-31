@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Clipboard Guardian</string>
+    <string name="notification_channel_name">Clipboard Guardian</string>
+    <string name="notification_channel_description">Фоновый мониторинг буфера обмена</string>
+    <string name="notification_title">Clipboard Guardian активен</string>
+    <string name="notification_text">Сервис отслеживает обращения к буферу обмена</string>
+    <string name="main_description">Агент отслеживает копирование текста и требует подтверждение пользователя перед выдачей данных приложениям.</string>
+    <string name="limitations_title">Ограничения Android</string>
+    <string name="limitations_body">Начиная с Android 10 система ограничивает доступ к буферу обмена для фоновых приложений. Поэтому защита может срабатывать только когда приложение на экране. Для защиты «во всех приложениях» нужны системные привилегии или режим клавиатуры (IME).</string>
+    <string name="start_guardian">Запустить защиту</string>
+    <string name="stop_guardian">Остановить защиту</string>
+    <string name="status_running">Статус: защита активна</string>
+    <string name="status_stopped">Статус: сервис остановлен</string>
+    <string name="test_copy">Тест: скопировать строку</string>
+    <string name="test_section_title">Тест буфера обмена</string>
+    <string name="test_section_hint">Пиши текст, пробуй копировать/вставлять. Приложение спросит разрешение и применит решение.</string>
+    <string name="test_input_hint">Тестовое поле</string>
+    <string name="test_action_copy">Копировать из поля</string>
+    <string name="test_action_paste">Вставить в поле</string>
+    <string name="toast_start_service_for_test">Для теста нужно включить защиту (сервис будет запущен).</string>
+    <string name="toast_empty_test_input">Поле пустое — нечего копировать.</string>
+    <string name="toast_request_paste">Запрошена вставка. Ожидание решения…</string>
+    <string name="toast_paste_allowed">Вставка разрешена.</string>
+    <string name="toast_paste_denied">Вставка запрещена.</string>
+    <string name="history_title">История обращений</string>
+    <string name="history_empty">История пока пуста.</string>
+    <string name="history_refresh">Обновить историю</string>
+    <string name="decision_allow">Разрешить</string>
+    <string name="decision_block">Запретить</string>
+    <string name="approval_title_copy">Обнаружена попытка записи в буфер обмена</string>
+    <string name="approval_message_copy">Приложение запросило запись данных в буфер обмена. Разрешить?</string>
+    <string name="approval_title_read">Обнаружена попытка чтения буфера обмена</string>
+    <string name="approval_message_read">Приложение запрашивает доступ к буферу обмена. Разрешить?</string>
+    <string name="approval_message_copy_with_app">«%1$s» запрашивает запись данных в буфер обмена. Разрешить?</string>
+    <string name="approval_message_read_with_app">«%1$s» запрашивает чтение буфера обмена. Разрешить?</string>
+    <string name="approval_sample_placeholder">Нет текстового содержимого</string>
+    <string name="approval_hint">Сравните текст ниже с ожидаемыми данными, чтобы исключить подмену.</string>
+
+    <string name="xposed_description">LSPosed/Xposed модуль: глобальный контроль чтения/записи буфера обмена.</string>
+</resources>
