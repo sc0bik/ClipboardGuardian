@@ -103,11 +103,11 @@ dist/                                      – готовые сборки (APK/
 
 ### Android
 
-Требования: Android SDK + JDK **17** (на JDK 21+ могут возникать проблемы с Android toolchain).
+Требования: Android SDK + JDK **17**.
 
 **Настройка Android SDK:**
 
-1. Установи Android SDK (через Android Studio или командную строку)
+1. Установи Android SDK
 2. Создай файл `android/ClipboardGuardian.Android/local.properties` с содержимым:
    ```
    sdk.dir=/path/to/android/sdk
